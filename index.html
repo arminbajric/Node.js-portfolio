@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<script type="text/javascript">
+function	promjeniBoju(id,color)
+	{
+		document.getElementById(id).style.background = color;
+	}
+function vratiBoju(id,color)
+	{
+		document.getElementById(id).style.background = color;
+	}
+	function otvoriLink(link)
+	{
+		window.location.href=link;
+	}
+	function startTime() {
+    var datum = new Date();
+    var h = datum.getHours();
+    var m = datum.getMinutes();
+    var s = datum.getSeconds();
+    var dd=datum.getDay();
+    var mm=datum.getMonth();
+    var yy=datum.getYear();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s+" Datum: "+dd+"."+(mm+1)+"."+(yy+1900);
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+	function sakrijDugme()
+	{
+		window.document.getElementById("navi").style.visibility="hidden";
+	}
+	</script>
+	<style type="text/css">
+	#navi
+		{
+			
+			
+			background-color:#ff5a00; 
+			width=25%;	
+			
+		}
+		#navi1
+		{
+			
+			background-color:#ff5a00; 
+			width=25%;	
+			
+		}
+		#navi1:hover
+		{
+			transform: scale(1.1);
+		}
+		#navi2:hover
+		{
+			transform: scale(1.1);
+		}
+		#navi3:hover
+		{
+			transform: scale(1.1);
+		}
+		#navi:hover
+		{
+			transform: scale(1.1);
+		}
+		#navi2
+		{
+			
+			background-color:#ff5a00; 
+			width=25%;	
+			
+		
+			
+		}
+		#navi3
+		{
+			
+			background-color:#ff5a00; 
+			width=25%;	
+			text-emphasis-color: antiquewhite;
+			
+			border-color: khaki;
+		}
+		.link
+		{
+			text-decoration: none;
+			font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+			
+			color: aliceblue;
+		}
+		.linkVise
+		{
+			text-decoration: none;
+			font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+			font-size: 7px;
+			color: #ff5a00;
+		}
+		
+		.element {
+   
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+			font-size: 14px;
+			
+			color: #ff5a00;
+}
+		
+		}
+		.meni
+		{
+			
+			width=25%;
+			align-self: center;
+		}
+		body
+		{
+			border: 0px;
+			margin-left: 0px;
+			margin-right: 0px;
+			margin-top: 0px;
+		}
+		.bio
+		{
+			
+			font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+		
+			margin-top: 10px;
+			margin-bottom: 10px;
+			background-color: #1F80AF;
+			font-size: 7px;
+		}
+		.meni1
+		{
+			
+			font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+		
+			margin-top: 0px;
+			margin-bottom: 10px;
+			background-color: #1F80AF;
+			font-size: 14px;
+		}
+		
+		.bio:hover{
+		transform: scaleY(1.3);
+			font-size: 11px;
+		}
+	</style>
+<head>
+<meta charset="utf-8">
+<title>Proba</title>
+</head>
+
+
+<body onLoad="provjeriLogin();">
+
+
+	
+	<table width="100%" border="0"  cellpadding="1" class="meni1" >
+	<tr  bgcolor="#1F80AF" width="100%"   >
+	<th >
+		<table width="90%" align="center"  >
+			<tr class="meni" width="90%" align="center">
+				<th width="22.5%" div id="navi" onClick="otvoriLink('http:\\www.google.ba');" onMouseOver="promjeniBoju(this.id,'khaki');" onMouseOut="vratiBoju(this.id,'#ff5a00');"  ><a class="link" href="#" id="link1">Facebook profil</a></th>
+				<th   width="22.5%" div id="navi1" onMouseOver="promjeniBoju(this.id,'khaki');" onMouseOut="vratiBoju(this.id,'#ff5a00');" ><a class="link" href="#" id="link2">Twitter profil   </a></th>
+				<th width="22.5%" div id="navi2" onMouseOver="promjeniBoju(this.id,'khaki');" onMouseOut="vratiBoju(this.id,'#ff5a00');" ><a class="link" href="#" id="link3">Google+ profil</a></th>
+				<th width="22.5%" div id="navi3" onMouseOver="promjeniBoju(this.id,'khaki');" onMouseOut="vratiBoju(this.id,'#ff5a00');" ><a class="link" href="mailto:bajric.armin.3t1@gmail.com" id="link4">Email me</a></th>
+			</tr>
+		
+			
+		</table>
+		</th>
+		</tr>
+		</table>
+
+
+<table align="center" width="90%">
+<tr width="90%" align="center">
+<th>
+
+  <table class="element"  width="80%" >
+	  <tr class="element" ><th clas="element">Armin Bajrić</th></tr>
+	  <tr ><th clas="element">Gornje Durbave bb,Živinice</th></tr>
+	  <tr ><th clas="element">E-mail: bajric.armin.3t1@gmail.com</th></tr>
+    <tr><th clas="element">Mob:062-462-884</th>
+    </tr>
+  </table>
+
+</th>
+</tr>
+</table>
+<table class="bio" >
+	<tr>
+		<th  class="bio" width="22.5%" height="50px">
+		Rođen 22.5.1993 g. u Tuzli.Prijavljen sa stalnim boravištem u opštini Živinice.<a class="linkVise" href="#" >Prikaži više.</a>
+			
+		</th>
+		<th class="bio" width="22.5%" height="50px">Osnovnu školu ,od prvog do četvrtog razreda završio u Područnoj školi u Gornjim Dubravama.Od petog do osmog razreda u OŠ "Dubrave" u Donjim Dubravama 2008 godine.<a class="linkVise" href="#" >Prikaži više.</a></th>
+		<th class="bio" width="22.5%" height="50px">Od 2008. do 2012. godine pohađao ETŠ Tuzla u Tuzli te stekao zvanje IT tehničar sa odličnim uspjehom iz maturskog rada naziva ADO.Net klase sa praktičnom primjenom na aplikaciji za Rent a car.<a class="linkVise" href="#" >Prikaži više.</a></th>
+		<th class="bio" width="22.5%" height="50px">Od 2013. godine student Rudarsko - geološko - građevinskog fakulteta u Tuzli.Odsjek Građevinarstvo.Trenutno apsolvent pomenutog fakulteta.<a class="linkVise" href="#" >Prikaži više.</a></th>
+		
+	</tr>
+</table>
+
+</body>
+</html>
