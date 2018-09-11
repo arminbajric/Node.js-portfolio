@@ -4,6 +4,7 @@
 function	promjeniBoju(id,color)
 	{
 		document.getElementById(id).style.background = color;
+		document.getElementsByClassName('link').style.text.backgroundColor='#1F80AF';
 	}
 function vratiBoju(id,color)
 	{
@@ -51,6 +52,7 @@ function checkTime(i) {
 			background-color:#ff5a00; 
 			width=25%;	
 			
+			
 		}
 		#navi1:hover
 		{
@@ -74,7 +76,7 @@ function checkTime(i) {
 			background-color:#ff5a00; 
 			width=25%;	
 			
-		
+		    
 			
 		}
 		#navi3
@@ -82,23 +84,28 @@ function checkTime(i) {
 			
 			background-color:#ff5a00; 
 			width=25%;	
-			text-emphasis-color: antiquewhite;
 			
-			border-color: khaki;
 		}
 		.link
 		{
 			text-decoration: none;
 			font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 			
-			color: aliceblue;
+			color:black;
 		}
-		.linkVise
+		.linkB
 		{
 			text-decoration: none;
 			font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
-			font-size: 7px;
-			color: #ff5a00;
+			
+			color:black;
+		}
+		.linkO
+		{
+			text-decoration: none;
+			font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+			
+			color:black;
 		}
 		
 		.element {
@@ -148,14 +155,34 @@ function checkTime(i) {
 		transform: scaleY(1.3);
 			font-size: 11px;
 		}
+		.projectsBlue
+		{
+			width:33%;
+			height: 200px;
+			background-color:#1F80AF;
+			border: none;
+			font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+			color: aliceblue;
+			align-self: left;
+		}
+		.projectsOrange
+		{
+			background-color:#ff5a00;
+			align-self: left;
+			width: 33%;
+			height: 200px;
+			border: none;
+			font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+			color: aliceblue;
+		}
 	</style>
 <head>
 <meta charset="utf-8">
-<title>Proba</title>
+<title>Portfolio</title>
 </head>
 
 
-<body onLoad="provjeriLogin();">
+<body >
 
 
 	
@@ -164,9 +191,9 @@ function checkTime(i) {
 	<th >
 		<table width="90%" align="center"  >
 			<tr class="meni" width="90%" align="center">
-				<th width="22.5%" div id="navi" onClick="otvoriLink('http:\\www.google.ba');" onMouseOver="promjeniBoju(this.id,'khaki');" onMouseOut="vratiBoju(this.id,'#ff5a00');"  ><a class="link" href="#" id="link1">Facebook profil</a></th>
-				<th   width="22.5%" div id="navi1" onMouseOver="promjeniBoju(this.id,'khaki');" onMouseOut="vratiBoju(this.id,'#ff5a00');" ><a class="link" href="#" id="link2">Twitter profil   </a></th>
-				<th width="22.5%" div id="navi2" onMouseOver="promjeniBoju(this.id,'khaki');" onMouseOut="vratiBoju(this.id,'#ff5a00');" ><a class="link" href="#" id="link3">Google+ profil</a></th>
+				<th width="22.5%" div id="navi" onClick="otvoriLink('https://www.facebook.com/armin.bajric.353');" onMouseOver="promjeniBoju(this.id,'khaki','#1F80AF');" onMouseOut="vratiBoju(this.id,'#ff5a00');"  ><a class="link" href="https://www.facebook.com/armin.bajric.353" id="link1">Facebook profil</a></th>
+				<th   width="22.5%" div id="navi1" onClick="otvoriLink('https://twitter.com/BajricArmin')" onMouseOver="promjeniBoju(this.id,'khaki');" onMouseOut="vratiBoju(this.id,'#ff5a00');" ><a class="link" href="https://twitter.com/BajricArmin" id="link2">Twitter profil   </a></th>
+				<th width="22.5%" div id="navi2" onClick="otvoriLink('https://github.com/arminbajric')" onMouseOver="promjeniBoju(this.id,'khaki');" onMouseOut="vratiBoju(this.id,'#ff5a00');" ><a class="link" href="https://github.com/arminbajric" id="link3">GitHub profil</a></th>
 				<th width="22.5%" div id="navi3" onMouseOver="promjeniBoju(this.id,'khaki');" onMouseOut="vratiBoju(this.id,'#ff5a00');" ><a class="link" href="mailto:bajric.armin.3t1@gmail.com" id="link4">Email me</a></th>
 			</tr>
 		
@@ -176,7 +203,7 @@ function checkTime(i) {
 		</tr>
 		</table>
 
-
+	<hr></hr>
 <table align="center" width="90%">
 <tr width="90%" align="center">
 <th>
@@ -195,15 +222,43 @@ function checkTime(i) {
 <table class="bio" >
 	<tr>
 		<th  class="bio" width="22.5%" height="50px">
-		Rođen 22.5.1993 g. u Tuzli.Prijavljen sa stalnim boravištem u opštini Živinice.<a class="linkVise" href="#" >Prikaži više.</a>
-			
+		Rođen 22.5.1993 g. u Tuzli.Prijavljen sa stalnim boravištem u opštini Živinice.
 		</th>
-		<th class="bio" width="22.5%" height="50px">Osnovnu školu ,od prvog do četvrtog razreda završio u Područnoj školi u Gornjim Dubravama.Od petog do osmog razreda u OŠ "Dubrave" u Donjim Dubravama 2008 godine.<a class="linkVise" href="#" >Prikaži više.</a></th>
-		<th class="bio" width="22.5%" height="50px">Od 2008. do 2012. godine pohađao ETŠ Tuzla u Tuzli te stekao zvanje IT tehničar sa odličnim uspjehom iz maturskog rada naziva ADO.Net klase sa praktičnom primjenom na aplikaciji za Rent a car.<a class="linkVise" href="#" >Prikaži više.</a></th>
-		<th class="bio" width="22.5%" height="50px">Od 2013. godine student Rudarsko - geološko - građevinskog fakulteta u Tuzli.Odsjek Građevinarstvo.Trenutno apsolvent pomenutog fakulteta.<a class="linkVise" href="#" >Prikaži više.</a></th>
+		<th class="bio" width="22.5%" height="50px">Osnovnu školu ,od prvog do četvrtog razreda završio u Područnoj školi u Gornjim Dubravama.Od petog do osmog razreda u OŠ "Dubrave" u Donjim Dubravama 2008 godine.</th>
+		<th class="bio" width="22.5%" height="50px">Od 2008. do 2012. godine pohađao ETŠ Tuzla u Tuzli te stekao zvanje IT tehničar sa odličnim uspjehom iz maturskog rada naziva ADO.Net klase sa praktičnom primjenom na aplikaciji za Rent a car.</th>
+		<th class="bio" width="22.5%" height="50px">Od 2013. godine student Rudarsko - geološko - građevinskog fakulteta u Tuzli.Odsjek Građevinarstvo.Trenutno apsolvent pomenutog fakulteta.</th>
 		
 	</tr>
 </table>
-
+	<hr> </hr>
+	<table width="100%">
+		<tr width="90%" >
+			<th class="projectsBlue">
+			<p align="left">Bild IT Projects:</p>
+				<ul  style="list-style-type:none">
+					<li><a class="linkB" href="https://github.com/arminbajric/Biblioteka.git">Biblioteka</a>
+						
+					</li>
+					<li><a class="linkB" href="https://github.com/arminbajric/Bankomat.git">Bankomat</a></li>
+					<li><a class="linkB" href="https://github.com/arminbajric/arminbajric.github.io.git">Portfolio</a></li>
+					<li><a class="linkB" href="https://github.com/arminbajric/File-zadaci.git">I/O zadaci</a></li>
+					<p align="left">Zadaci rađeni tokom napredne obuke BILD IT trainee programa.Projekti obuhvataju OOP programiranje,I/O rad sa fajlovima,rad i manupulacija SQL baze podataka.</p>
+				</ul>
+			</th>
+			<th class="projectsOrange">
+				<p align="left" >Ostali samostalni projekti:</p>
+				<ul  style="list-style-type:none">
+					<li><a class="linkO" href="https://github.com/arminbajric/AnalogClock.git">Analog Clock</a></li>
+					<li><a class="linkO" href="https://github.com/arminbajric/KPDTS.git">KPDTS(GUI)</a></li>
+					<li><a class="linkO" href="https://github.com/arminbajric/Kalkulator-applet.git">Kalkulator(GUI)</a></li>
+					<li><a class="linkO" href="">Razni samostalni zadaci</a></li>
+				</ul>
+				<p>Samostalno osmišljeni i izrađeni projekti uglavnom obuhvataju Java Applet i Java Swing ali i rad sa bazama podataka,korištenje resursa sa interneta te podešavanja postavki računara preko CMD-a.</p>
+			</th>
+			<th class="projectsBlue">
+				<p>Ostalo</p>
+			</th>
+		</tr>
+	</table>
 </body>
 </html>
