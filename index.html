@@ -122,6 +122,7 @@ function checkTime(i) {
 			
 			width=25%;
 			align-self: center;
+			
 		}
 		body
 		{
@@ -149,6 +150,9 @@ function checkTime(i) {
 			margin-bottom: 10px;
 			background-color: #1F80AF;
 			font-size: 14px;
+			position: sticky;
+		
+			
 		}
 		
 		.bio:hover{
@@ -212,10 +216,33 @@ function checkTime(i) {
 		}
 		#about
 		{
+			width: 80%;
 			padding-left: 40px;
 			padding-right: 40px;
 		font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 			color: aliceblue;
+			background-color:#1F80AF;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, .9);
+		}
+		#pretplata
+		{
+		    width: 70%;
+			font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+			color: aliceblue;
+			height: 60px;
+		}
+		.potvrda
+		{
+			background-color:#ff5a00;
+			border: none;
+			
+			
+			font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+			color: aliceblue;
+			
+		}
+		.potvrda:hover
+		{
 			background-color:#1F80AF;
 		}
 	</style>
@@ -228,8 +255,8 @@ function checkTime(i) {
 <body style="background-color: lightslategray">
 
 
-	
-	<table width="100%" border="0"  cellpadding="1" class="meni1" >
+	<center>
+	<table width="80%" border="0"  cellpadding="1" class="meni1" >
 	<tr  bgcolor="#1F80AF" width="100%"   >
 	<th >
 		<table width="90%" align="center"  >
@@ -245,7 +272,7 @@ function checkTime(i) {
 		</th>
 		</tr>
 		</table>
-
+</center>
 	
 <table align="center" width="100%" style="background-color: lightslategray;" >
 <tr width="90%" align="center">
@@ -304,6 +331,13 @@ function checkTime(i) {
 			</th>
 		</tr>
 	</table>
+	<center>
+	<div style="padding-left:" id="pretplata" align="center">
+		<p style="padding-left: 0%">Pretplatite se na novosti:</p>
+		<div style="padding-left: 15px"><input type="email"><div></div><input  class="potvrda" type="submit"  value="Potvrdi"></div>
+	</div>
+	</center>
+	<hr>
 	<div  id="skillTable">
 	<table  align="center" height="300"  >
 		<tr class="skill">
@@ -316,11 +350,13 @@ function checkTime(i) {
 		</tr>
 	</table>
 	</div>
+	<center>
 	<div id="about">
 		<p float="left" style="padding-left: 20px">O meni... </p>
 		<p float="left" style="padding-left: 50px">Student i aspolvent Rudarsko-geološko-građevinskog fakulteta u Tuzli na odsjeku za građevinarstvo.Veliki pobornik svih tehničkih nauka i ogranaka.U kratko zaljublenik u sve stvari sa naglaskom na logiku.Trenutno pohađam BILD IT training naprednu obuku u Doboju.Poznavalac velikog broja tehnologija u IT sektoru što se pored programiranja odnosi i na područje automatike i robotike,te elektronike. </p>
 		<p align="center">Created by Armin Bajrić</p>
 	</div>
+	</center>
 	</div>
 </body>
 </html>
