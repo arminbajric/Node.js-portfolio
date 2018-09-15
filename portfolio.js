@@ -45,7 +45,7 @@ else
 	{
 		var pretplata=window.localStorage.getItem('email');
 
-if (pretplata !== null){
+       if (pretplata !== null){
 
 				window.document.getElementById("info").innerHTML="Pretplaćeni ste na novosti!"; 
 				window.document.getElementById("email").style.visibility="hidden";
