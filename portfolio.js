@@ -25,7 +25,7 @@ function	promjeniBoju(id,color)
 		
 		var submit=window.document.getElementById("potvrda").value;
 		var email=window.document.getElementById("email").value;
-		if(localStorage.getItem('email')!=null || localStorage.getItem('email')!='' )
+		if(localStorage.getItem('email')===null )
 			{
 		localStorage.setItem('email',email);
 		
@@ -37,13 +37,13 @@ else
 	{
 		localStorage.removeItem('email');
 		window.document.getElementById("info").innerHTML="Pretplatite se na novosti!"; 
-		window.document.getElementById("email").style.visibility="true";
+		window.document.getElementById("email").style.visibility="visible";
 		window.document.getElementById("potvrda").value="Potvrdi";
 	}
 	}
 	function provjeriPretplatu()
 	{
-		var pretplata=window.localStorage.getItem("email");
+		var pretplata=window.localStorage.getItem('email');
 
 if (pretplata !== null){
 
@@ -54,7 +54,7 @@ if (pretplata !== null){
       else
 		{
 			window.document.getElementById("info").innerHTML="Pretplatite se na novosti!"; 
-				window.document.getElementById("email").style.visibility="true";
+				window.document.getElementById("email").style.visibility="visible";
 				window.document.getElementById("potvrda").value="Potvrdi ";
 		}
 	}
