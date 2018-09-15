@@ -50,3 +50,4 @@ if (cookieStart !== -1){
 				window.document.getElementById("potvrda").value="Otkaži pretplatu";
 		}
 	}
+	}
