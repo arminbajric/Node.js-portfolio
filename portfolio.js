@@ -22,22 +22,30 @@ function	promjeniBoju(id,color)
 	}
 	function potvrdiPretplatu()
 	{
+		localStorage.clear;
+		var submit=window.document.getElementById("potvrda").value;
 		var email=window.document.getElementById("email").value;
-		document.cookie="email="+this.email+";";
+		if(submit==="Potvrdi")
+			{
+		localStorage.setItem('email',email);
+		
 		window.document.getElementById("info").innerHTML="Pretplaćeni ste na novosti!"; 
 		window.document.getElementById("email").style.visibility="hidden";
 		window.document.getElementById("potvrda").value="Otkaži pretplatu";
 	}
+else if(submit==="Otkaži pretplatu")
+	{
+		localStorage.removeNamedItem('email');
+		window.document.getElementById("info").innerHTML="Pretplatite se na novosti!"; 
+		window.document.getElementById("email").style.visibility="true";
+		window.document.getElementById("potvrda").value="Potvrdi";
+	}
+	}
 	function provjeriPretplatu()
 	{
-		var cookieStart, cookieEnd, cookieValue;
-		if (document.cookie.length > 0){
+		var pretplata=window.localStorage.getItem("email");
 
-
-cookieStart = document.cookie.indexOf("email=");
-
-
-if (cookieStart !== -1){
+if (pretplata !== null){
 
 				window.document.getElementById("info").innerHTML="Pretplaćeni ste na novosti!"; 
 				window.document.getElementById("email").style.visibility="hidden";
@@ -47,7 +55,7 @@ if (cookieStart !== -1){
 		{
 			window.document.getElementById("info").innerHTML="Pretplatite se na novosti!"; 
 				window.document.getElementById("email").style.visibility="true";
-				window.document.getElementById("potvrda").value="Otkaži pretplatu";
+				window.document.getElementById("potvrda").value="Potvrdi ";
 		}
 	}
-	}
+	
