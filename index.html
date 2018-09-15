@@ -6,7 +6,7 @@ function	promjeniBoju(id,color)
 		document.getElementById(id).style.background = color;
 		document.getElementsByClassName('link').style.text.backgroundColor='#1F80AF';
 	}
-function vratiBoju(id,color)
+    function vratiBoju(id,color)
 	{
 		document.getElementById(id).style.background = color;
 	}
@@ -14,30 +14,27 @@ function vratiBoju(id,color)
 	{
 		window.location.href=link;
 	}
-	function startTime() {
-    var datum = new Date();
-    var h = datum.getHours();
-    var m = datum.getMinutes();
-    var s = datum.getSeconds();
-    var dd=datum.getDay();
-    var mm=datum.getMonth();
-    var yy=datum.getYear();
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('txt').innerHTML =
-    h + ":" + m + ":" + s+" Datum: "+dd+"."+(mm+1)+"."+(yy+1900);
-    var t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-}
 	function sakrijDugme()
 	{
 		window.document.getElementById("navi").style.visibility="hidden";
 	}
+    function ocisti()
+	{
+		window.document.getElementById("email").value="";
+	}
+	function potvrdiPretplatu()
+	{
+		var email=window.document.getElementById("email").value;
+		document.cookie="email="+this.email+";";
+	}
 	</script>
 	<style type="text/css">
+		#email
+		{
+			text-decoration: none;
+			font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+			color: dimgrey;
+		}
 	#navi
 		{
 			
@@ -112,7 +109,7 @@ function checkTime(i) {
    
 	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 			font-size: 14px;
-			
+			padding-top: 50px;
 			color: aliceblue;
 }
 		
@@ -150,7 +147,9 @@ function checkTime(i) {
 			margin-bottom: 10px;
 			background-color: #1F80AF;
 			font-size: 14px;
-			position: sticky;
+			position: fixed;
+			width: 100%;
+			
 		
 			
 		}
@@ -278,7 +277,7 @@ function checkTime(i) {
 <tr width="90%" align="center">
 <th>
 
-  <table class="element"  width="80%" >
+  <table class="element"   >
 	  <tr class="element" ><th clas="element">Armin Bajrić</th></tr>
 	  <tr ><th clas="element">Gornje Durbave bb,Živinice</th></tr>
 	  <tr ><th clas="element">E-mail: bajric.armin.3t1@gmail.com</th></tr>
@@ -289,7 +288,8 @@ function checkTime(i) {
 </th>
 </tr>
 </table>
-<table class="bio" >
+<center>
+<table class="bio" width="90%" >
 	<tr>
 		<th  class="bio" width="22.5%" height="50px">
 		Rođen 22.5.1993 g. u Tuzli.Prijavljen sa stalnim boravištem u opštini Živinice.
@@ -300,10 +300,12 @@ function checkTime(i) {
 		
 	</tr>
 </table>
+</center>
 	<hr> 
 	<div style="background-color:lightslategray">
-	<table width="100%">
-		<tr width="90%" >
+	<center>
+	<table width="80%">
+		<tr width="100%" >
 			<th class="projectsBlue">
 			<p align="left">Bild IT Projects:</p>
 				<ul  style="list-style-type:none">
@@ -331,10 +333,11 @@ function checkTime(i) {
 			</th>
 		</tr>
 	</table>
+	</center>
 	<center>
 	<div style="padding-left:" id="pretplata" align="center">
 		<p style="padding-left: 0%">Pretplatite se na novosti:</p>
-		<div style="padding-left: 15px"><input type="email"><div></div><input  class="potvrda" type="submit"  value="Potvrdi"></div>
+		<div style="padding-left: 15px"><input id="email" value="Vas email"  onFocus="ocisti();" type="email"><div></div><input  class="potvrda" type="submit"  onClick="potvrdiPretplatu();" value="Potvrdi"></div>
 	</div>
 	</center>
 	<hr>
