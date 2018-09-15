@@ -53,7 +53,7 @@ function getCookie(email) {
     while (c.charAt(0) == ' ') {
       c = c.substring(1);
     }
-    if (c.indexOf(name) == 0) {
+    if (c.indexOf(email) == 0) {
       return true;
     }
   }
