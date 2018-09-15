@@ -25,7 +25,7 @@ function	promjeniBoju(id,color)
 		
 		var submit=window.document.getElementById("potvrda").value;
 		var email=window.document.getElementById("email").value;
-		if(localStorage.getItem('email')===null )
+		if(submit==="Potvrdi" )
 			{
 		localStorage.setItem('email',email);
 		
