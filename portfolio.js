@@ -30,10 +30,15 @@ function	promjeniBoju(id,color)
 	}
 	function provjeriPretplatu()
 	{
-		const cookieExists = Cookies.get('email');
+		var cookieStart, cookieEnd, cookieValue;
+		if (document.cookie.length > 0){
 
-		if(cookieExists)
-			{
+
+cookieStart = document.cookie.indexOf("email=");
+
+
+if (cookieStart !== -1){
+
 				window.document.getElementById("info").innerHTML="Pretplaćeni ste na novosti!"; 
 				window.document.getElementById("email").style.visibility="hidden";
 				window.document.getElementById("potvrda").value="Otkaži pretplatu";
@@ -45,18 +50,3 @@ function	promjeniBoju(id,color)
 				window.document.getElementById("potvrda").value="Otkaži pretplatu";
 		}
 	}
-function getCookie(email) {
-  var name = email + "=";
-  var decodedCookie = decodeURIComponent(document.cookie);
-  var ca = decodedCookie.split(';');
-  for(var i = 0; i <ca.length; i++) {
-    var c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return true;
-    }
-  }
-  return false;
-}
