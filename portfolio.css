@@ -10,14 +10,14 @@
 		{
 			
 			
-			background-color:#ff5a00; 
+			background-color:brown; 
 			width:25%;	
 			
 		}
 		#navi1
 		{
 			
-			background-color:#ff5a00; 
+			background-color:brown; 
 			width:25%;	
 			
 			
@@ -25,6 +25,7 @@
 		#navi1:hover
 		{
 			transform: scale(1.1);
+			
 		}
 		#navi2:hover
 		{
@@ -41,7 +42,7 @@
 		#navi2
 		{
 			
-			background-color:#ff5a00; 
+			background-color:brown; 
 			width:25%;	
 			
 		    
@@ -50,7 +51,7 @@
 		#navi3
 		{
 			
-			background-color:#ff5a00; 
+			background-color:brown; 
 			width:25%;	
 			
 		}
@@ -59,7 +60,7 @@
 			text-decoration: none;
 			font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 			
-			color:black;
+			color:aliceblue;
 		}
 		.linkB
 		{
@@ -90,7 +91,7 @@
 			
 			width:25%;
 			align-self: center;
-			
+			background-color: brown;
 		}
 		body
 		{
@@ -116,7 +117,7 @@
 		box-shadow: 1px 2px 4px rgba(0, 0, 0, .8);
 			margin-top: 0px;
 			margin-bottom: 10px;
-			background-color: #1F80AF;
+			background-color: brown;
 			font-size: 14px;
 			position: fixed;
 			width: 100%;
@@ -143,7 +144,7 @@
 		.projectsOrange
 		{
 			box-shadow: 0px 2px 4px rgba(0, 0, 0, .9);
-			background-color:#ff5a00;
+			background-color:brown;
 			align-self: left;
 			width: 33%;
 			height: 200px;
@@ -191,7 +192,7 @@
 			padding-right: 40px;
 		font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 			color: aliceblue;
-			background-color:#1F80AF;
+			background-color:brown;
 			box-shadow: 0px 2px 4px rgba(0, 0, 0, .9);
 		}
 		#pretplata
