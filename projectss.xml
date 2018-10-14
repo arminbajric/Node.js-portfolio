@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<projekti>
+<bild>
+<projekat>
+	
+<ime_projektaB>Bankomat</ime_projektaB>
+<link_projektaB >https://github.com/arminbajric/Bankomat.git</link_projektaB>
+<titleB>Aplikacija koja simulira bankomat.Podržava dodavanje korisnika sa generisanjem broja računa,podizanje,transfer i uplatu novca.</titleB>
+</projekat>
+
+<projekat>
+
+	<ime_projektaB>Biblioteka</ime_projektaB>
+	<link_projektaB >https://github.com/arminbajric/Biblioteka.git</link_projektaB>
+	<titleB>Aplikacija koja simulira biblioteku,kreiranje korisnika,pretraživanje naslova,pretraživanje pisaca,podizanje i vraćanje knjiga... </titleB>
+</projekat>
+
+<projekat>
+
+	<ime_projektaB>Portfolio</ime_projektaB>
+	<link_projektaB>https://github.com/arminbajric/arminbajric.github.io.git</link_projektaB>
+	<titleB>HTML,CSS i Javascript projekat .Lični portfolio i prezentacija.</titleB>
+</projekat>
+
+<projekat>
+
+	<ime_projektaB>I/O zadaci</ime_projektaB>
+	<link_projektaB>https://github.com/arminbajric/File-zadaci.git</link_projektaB>
+	<titleB>Zadaci koji obrađuju txt datoteke.</titleB>
+	</projekat>
+	
+	</bild>
+<samostalni >
+	<ime_projektaS>Analog Clock</ime_projektaS>
+	<link_projektaS>https://github.com/arminbajric/AnalogClock.git</link_projektaS>
+	<titleS>Java Applet analogni sat.</titleS>
+	</samostalni>
+	<samostalni>
+	<ime_projektaS>KPDTS(GUI)</ime_projektaS>
+	<link_projektaS>https://github.com/arminbajric/KPDTS.git</link_projektaS>
+	<titleS>Program koji podržava izradu podsjetnika,listanje kalendara,provjeravanje tačnosti lokalnog vremena....</titleS>
+	</samostalni>
+	<samostalni>
+	<ime_projektaS>Kalkulator</ime_projektaS>
+	<link_projektaS>https://github.com/arminbajric/Kalkulator-applet.git</link_projektaS>
+	<titleS>Java Applet jednostavni kalkulator.</titleS>
+	</samostalni>
+	<samostalni>
+	<ime_projektaS>Ostali samostalni zadaci</ime_projektaS>
+	<link_projektaS></link_projektaS>
+	<titleS>Skup kratkih i zanimljivih zadataka.</titleS>
+</samostalni>
+</projekti>

@@ -1,17 +1,36 @@
 <!doctype html>
 <html>
-<script src="portfolio.js"></script>
+<script type="text/javascript" src="/portfolio.js"></script>
+ <script ></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="/cookie.js"></script>
+	<script>
+	$(document).ready(function () {
+  // Listen to click event on the submit button
+  $('#potvrda').click(function (e) {
 
-	
+    e.preventDefault();
+
+    var email = $('#email').val();
+
+
+    $.post('/forma', {
+      
+      email: email
+    }).complete(function() {
+        console.log('Success');
+      });
+  });
+});</script>
 	
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="portfolio.css">
+<link rel="stylesheet" type="text/css" href="/portfolio.css">
 <title>Portfolio</title>
 </head>
 
 
-<body onLoad="provjeriPretplatu();startTime();" style="background-color: lightslategray">
+<body  style="background-color: lightslategray" >
 
 
 	<center>
@@ -39,7 +58,7 @@
 
   <table class="element"   >
 	  <tr class="element" ><th clas="element">Armin Bajrić</th></tr>
-	  <tr ><th clas="element">Gornje Durbave bb,Živinice</th></tr>
+	  <tr ><th clas="element">Gornje Dubrave bb,Živinice</th></tr>
 	  <tr ><th clas="element">E-mail: bajric.armin.3t1@gmail.com</th></tr>
     <tr><th clas="element">Mob:062-462-884</th>
     </tr>
@@ -69,22 +88,20 @@
 			<th class="projectsBlue">
 			<p align="left">Bild IT Projects:</p>
 				<ul  style="list-style-type:none">
-					<li><a title="Aplikacija koja simulira biblioteku te se koristi podacima iz baze podataka.Uređeno na principu Java OOP.Podržava dodavanje korisnika,dodavanje naslova,podizanje knjiga,vraćanje knjiga...." class="linkB" href="https://github.com/arminbajric/Biblioteka.git">Biblioteka</a>
-						
-					</li>
-					<li><a title="Aplikacija koja simulira bankomat.Podržava izradu računa,podizanje novca,transfer novca.Izrađeno pomoću txt fileova u koje se smiještaju informacije na principu Java OOP programiranja." class="linkB" href="https://github.com/arminbajric/Bankomat.git">Bankomat</a></li>
-					<li><a title ="HTML,CSS te jednim djelom JavaScript projekat sa zadatkom izrade portfolia." class="linkB" href="https://github.com/arminbajric/arminbajric.github.io.git">Portfolio</a></li>
-					<li><a title="Zadaci koji koriste txt fileove za I/O operacije nad fajlovima i njihovim sadržajem. " class="linkB" href="https://github.com/arminbajric/File-zadaci.git">I/O zadaci</a></li>
+					<li class="linkB1"><a id="prvi"  href="#"></a></li>
+					<li class="linkB2"><a id="drugi"   href="#"></a></li>
+					<li class="linkB3"><a id="treci"  href="#"></a></li>
+					<li class="linkB4"><a id="cetvrti"  href="#"></a></li>
 					<p align="left">Zadaci rađeni tokom napredne obuke BILD IT trainee programa.Projekti obuhvataju OOP programiranje,I/O rad sa fajlovima,rad i manupulacija SQL baze podataka.</p>
 				</ul>
 			</th>
 			<th class="projectsOrange">
 				<p align="left" >Ostali samostalni projekti:</p>
 				<ul  style="list-style-type:none">
-					<li><a title="Analogni sat koji koristi sistemsko vrijeme za prikaz ." class="linkO" href="https://github.com/arminbajric/AnalogClock.git">Analog Clock</a></li>
-					<li><a title="Aplikacija koja podržava kreiranje podsjetnika,pregledavanja kalendara,provjera sistemskog vremena i datuma poređenjem sa internetskim vremenom.Sve informacije se čitaju i smještaju u SQL bazu podataka ." class="linkO" href="https://github.com/arminbajric/KPDTS.git">KPDTS(GUI)</a></li>
-					<li><a title =" Kalkulator sa interfejsom koji podržava osnovne matmatičke operacija." class="linkO" href="https://github.com/arminbajric/Kalkulator-applet.git">Kalkulator(GUI)</a></li>
-					<li><a title="Razni ,obično kraći,zadaci ." class="linkO" href="">Razni samostalni zadaci</a></li>
+					<li><a id="peti" href=""></a></li>
+					<li><a id="sesti" href=""></a></li>
+					<li><a id="sedmi" href=""></a></li>
+					<li><a id="osmi" href=""></a></li>
 				</ul>
 				<p>Samostalno osmišljeni i izrađeni projekti uglavnom obuhvataju Java Applet i Java Swing ali i rad sa bazama podataka,korištenje resursa sa interneta te podešavanja postavki računara preko CMD-a.</p>
 			</th>
@@ -97,7 +114,7 @@
 	<center>
 	<div style="padding-left:" id="pretplata" align="center">
 		<p id="info" style="padding-left: 0%">Pretplatite se na novosti:</p>
-		<div style="padding-left: 15px"><input id="email" value="Vas email"  onFocus="ocisti();" type="email"><div></div><input  id="potvrda" type="submit"  onClick="potvrdiPretplatu();" ></div>
+		<div style="padding-left: 15px"><form  id="subscribe" method="POST" onSubmit="login(event);"  ><input name="email" id="email" value="Vas email"  onFocus="ocisti();" type="email"><button type="button"  id="potvrda" name="potvrda" value="Potvrdi" onClick="potvrdiPretplatu();"   ></button></form></div>
 	</div>
 	</center>
 	<hr>

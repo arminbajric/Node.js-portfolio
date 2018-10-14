@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<projekti>
+<bild>
+<projekat>
+	
+<ime_projektaB>Bankomat</ime_projektaB>
+<link_projektaB >https://github.com/arminbajric/Bankomat.git</link_projektaB>
+
+</projekat>
+
+<projekat>
+
+	<ime_projektaB>Biblioteka</ime_projektaB>
+	<link_projektaB >https://github.com/arminbajric/Biblioteka.git</link_projektaB>
+	
+</projekat>
+
+<projekat>
+
+	<ime_projektaB>Portfolio</ime_projektaB>
+	<link_projektaB>https://github.com/arminbajric/arminbajric.github.io.git</link_projektaB>
+	
+</projekat>
+
+<projekat>
+
+	<ime_projektaB>I/O zadaci</ime_projektaB>
+	<link_projektaB>https://github.com/arminbajric/File-zadaci.git</link_projektaB>
+	
+	</projekat>
+	
+	</bild>
+<samostalni >
+	<ime_projektaS>Analog Clock</ime_projektaS>
+	<link_projektaS>https://github.com/arminbajric/AnalogClock.git</link_projektaS>
+	</samostalni>
+	<samostalni>
+	<ime_projektaS>KPDTS(GUI)</ime_projektaS>
+	<link_projektaS>https://github.com/arminbajric/KPDTS.git</link_projektaS>
+	</samostalni>
+	<samostalni>
+	<ime_projektaS>Kalkulator</ime_projektaS>
+	<link_projektaS>https://github.com/arminbajric/Kalkulator-applet.git</link_projektaS>
+	</samostalni>
+	<samostalni>
+	<ime_projektaS>Ostali samostalni zadaci</ime_projektaS>
+	<link_projektaS></link_projektaS>
+</samostalni>
+</projekti>
